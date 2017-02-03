@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: SanDWeatherAlert
+  host: SanDWeatherAlert
+  disk_quota: 1024M
+  services:
+  - SanDWeatherAlert-cloudantNoSQLDB
+  - SanDWeatherAlert-iotf-service
